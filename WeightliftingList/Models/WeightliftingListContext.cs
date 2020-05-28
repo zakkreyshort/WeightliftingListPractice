@@ -8,5 +8,15 @@ namespace WeightliftingList.Models
         {
         }
         public DbSet<Weight> Weights { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Weight>()
+            .HasData(
+                new Weight { WeightId = 1, WeightType = "Barbell", Pounds = 45, Material = "Steel", Brand = "Rogue Fitness"},
+            );
+        }
     }
 }
+
+ 
