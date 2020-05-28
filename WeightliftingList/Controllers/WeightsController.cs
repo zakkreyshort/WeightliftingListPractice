@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using WeightliftingList.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace WeightliftingList.Controllers
 {
@@ -33,6 +34,22 @@ namespace WeightliftingList.Controllers
         public ActionResult<Weight> GetAction(int id)
         {
             return _db.Weights.FirstOrDefault(entry => entry.WeightId == id);
+        }
+
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] Weight weight)
+        {
+            weight.WeightId = id;
+            _db.Entry(weight).State = EntityState.Modified;
+            _db.SaveChanges();
+        }
+
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+            var weightToDelete = _db.Weights.FirstOrDefault(entry => entry.WeightId == id);
+            _db.Weights.Remove(weightToDelete);
+            _db.SaveChanges();
         }
     }
 }
