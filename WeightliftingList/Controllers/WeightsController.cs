@@ -28,5 +28,11 @@ namespace WeightliftingList.Controllers
             _db.Weights.Add(weight);
             _db.SaveChanges();
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<Weight> GetAction(int id)
+        {
+            return _db.Weights.FirstOrDefault(entry => entry.WeightId == id);
+        }
     }
 }
