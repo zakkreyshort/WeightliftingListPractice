@@ -1,6 +1,6 @@
 # _Weight List_
 
-#### _Last Updated: 28 May 2020_
+#### _Last Updated: 29 May 2020_
 
 #### By _**Zakkrey Short**_
 

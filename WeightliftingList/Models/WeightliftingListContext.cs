@@ -14,6 +14,10 @@ namespace WeightliftingList.Models
             builder.Entity<Weight>()
             .HasData(
                 new Weight { WeightId = 1, WeightType = "Barbell", Pounds = 45, Material = "Steel", Brand = "Rogue Fitness"},
+                new Weight { WeightId = 1, WeightType = "Barbell", Pounds = 45, Material = "Steel", Brand = "Rogue Fitness"},
+                new Weight { WeightId = 1, WeightType = "Barbell", Pounds = 45, Material = "Steel", Brand = "Rogue Fitness"},
+                new Weight { WeightId = 1, WeightType = "Barbell", Pounds = 45, Material = "Steel", Brand = "Rogue Fitness"},
+                new Weight { WeightId = 1, WeightType = "Barbell", Pounds = 45, Material = "Steel", Brand = "Rogue Fitness"}
             );
         }
     }
