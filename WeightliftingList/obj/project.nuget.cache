@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d44I83LIHK3gj52JvwAL5vDQlVcMe1GkPE636oiDl7rOn/onBr/pg+rxNow2nby7dQdOQgMM6eUEalHorf//ng==",
+  "dgSpecHash": "68vY87wn4pqkJCU4hIp1shMof+4IIZEjBNLyXyHFk0F+kphzN94ZpDRWl4usRiIhxYD6KU+UXsngF412QPQW1A==",
   "success": true,
   "projectFilePath": "/Users/zakkreyshort/Desktop/WeightliftingList.Solution/WeightliftingList/WeightliftingList.csproj",
   "expectedPackageFiles": [
@@ -177,7 +177,7 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/Users/zakkreyshort/.nuget/packages/mysqlconnector/0.49.2/mysqlconnector.0.49.2.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
-    "/Users/zakkreyshort/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/zakkreyshort/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/newtonsoft.json.bson/1.0.1/newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "/Users/zakkreyshort/.nuget/packages/pomelo.entityframeworkcore.mysql/2.2.0/pomelo.entityframeworkcore.mysql.2.2.0.nupkg.sha512",
     "/Users/zakkreyshort/.nuget/packages/pomelo.jsonobject/2.2.0/pomelo.jsonobject.2.2.0.nupkg.sha512",
