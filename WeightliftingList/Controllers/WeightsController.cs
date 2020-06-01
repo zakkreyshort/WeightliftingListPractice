@@ -18,9 +18,20 @@ namespace WeightliftingList.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Weight>> Get()
+        public ActionResult<IEnumerable<Weight>> Get(string weightType, string material)
         {
-            return _db.Weights.ToList();
+            var query = _db.Weights.AsQueryable();
+
+            if (weightType != null)
+            {
+                query = query.Where(entry => entry.WeightType == weightType);
+            }
+
+            if(material != null)
+            {
+                query = query.Where(entry => entry.Material == material);
+            }
+            return query.ToList();
         }
 
         [HttpPost]
