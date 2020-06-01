@@ -18,7 +18,7 @@ namespace WeightliftingList.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Weight>> Get(string weightType, string material)
+        public ActionResult<IEnumerable<Weight>> Get(string weightType, string material, string brand)
         {
             var query = _db.Weights.AsQueryable();
 
@@ -30,6 +30,11 @@ namespace WeightliftingList.Controllers
             if(material != null)
             {
                 query = query.Where(entry => entry.Material == material);
+            }
+
+            if(brand != null)
+            {
+                query = query.Where(entry => entry.Brand == brand);
             }
             return query.ToList();
         }
